@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/offername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer Name"
+            android:fontFamily="@font/circularstdblack"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Cancellation"
+            android:fontFamily="@font/circularstdbook"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/offername"/>
+
+        <TextView
+            android:id="@+id/validtill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid Till - "
+            android:fontFamily="@font/circularstdbold"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/cancel"/>
+
+        <TextView
+            android:id="@+id/validtilldate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/validtill"
+            android:layout_below="@id/cancel"
+            android:fontFamily="@font/circularstdbold"
+            android:text="28 May 2020"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/validon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid On - "
+            android:fontFamily="@font/circularstdbold"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/validtill"/>
+
+        <TextView
+            android:id="@+id/validondate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/validon"
+            android:layout_below="@id/validtill"
+            android:fontFamily="@font/circularstdbold"
+            android:text="Weekdays"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/validon"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/circularstdblack"
+            android:text="Details"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"/>
+
+        <Button
+            android:id="@+id/buynow"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/validon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/circularstdblack"
+            android:text="Buy NOW"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

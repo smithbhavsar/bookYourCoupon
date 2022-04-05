@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#918E8E"
+    tools:context=".shopDetails">
+
+    <ImageView
+        android:id="@+id/shopimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFB7000A"
+        android:contentDescription="TODO"
+        android:src="@drawable/mcd" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/shopimg">
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/circularstdbold"
+            android:text="@string/mc_donalds"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/area_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/circularstdbook"
+            android:text="Area"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_below="@id/shopname"/>
+
+        <TextView
+            android:id="@+id/shoprating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopname"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-26dp"
+            android:background="@drawable/rating_rectangle"
+            android:fontFamily="@font/circularstdbook"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="3dp"
+            android:text="4.8"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+            android:layout_below="@id/rl1"
+        >
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/circularstdbold"
+            android:text="About This Place"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/timming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Timming"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/timmingdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Mon - Fri 10am - 7pm\nSat - Sun 12pm- 5pm "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timming" />
+
+        <TextView
+            android:id="@+id/shopadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Addres"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timmingdetail" />
+
+        <TextView
+            android:id="@+id/addressdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="A/502 Indraprasth-3, Beside   \nDhananjay Bunglows , Satllite "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/shopphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Contact US"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shopnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="+91 9662727571"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Payment Options"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/payoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/circularstdmedium"
+            android:text="Cash             Card             E-Wallet"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:background="@drawable/signinbtn"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:text="Explore Coupons"
+        android:layout_toEndOf="@id/payoption"
+        />
+        </LinearLayout>
+</RelativeLayout>

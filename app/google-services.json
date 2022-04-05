@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "660544930311",
+    "firebase_url": "https://bookyourcoupon.firebaseio.com",
+    "project_id": "bookyourcoupon",
+    "storage_bucket": "bookyourcoupon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660544930311:android:0f58d3df881e7368f760a2",
+        "android_client_info": {
+          "package_name": "com.smithbhavsar.bookyourcoupon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660544930311-2256e3vbtoieeq1v3kg4qdl81gahild1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYBVjwU1UXnvUp6DgOc3vz5jILK1-ZIrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660544930311-2256e3vbtoieeq1v3kg4qdl81gahild1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
